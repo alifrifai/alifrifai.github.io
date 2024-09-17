@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('Beach\ Digital\ Art.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.674); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px; 
+    padding: 20px; 
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+}
+
+th {
+    background: rgba(255, 162, 0, 0.455); /* Less transparency for headers */
+    color: rgb(128, 102, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: rgba(223, 210, 178, 0.7); /* Slightly darker hover effect */
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="number"],
+input[type="datetime-local"] {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="number"]:focus,
+input[type="datetime-local"]:focus {
+    border-color: #43a047;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin: 5px 10px 5px 0;
+    accent-color: #43a047;
+}
+
+label {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2196f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+b {
+    color: #333;
+}
+
+ins {
+    text-decoration: none;
+    font-size: 1.2em;
+}
