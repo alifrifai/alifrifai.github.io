@@ -28,14 +28,14 @@ th, td {
 }
 
 th {
-    background: rgba(255, 162, 0, 0.455); /* Less transparency for headers */
+    background: rgba(255, 162, 0, 0.455);  
     color: rgb(128, 102, 0);
     font-weight: bold;
     text-align: center;
 }
 
 tr:hover {
-    background-color: rgba(223, 210, 178, 0.7); /* Slightly darker hover effect */
+    background-color: rgba(223, 210, 178, 0.7); 
 }
 
 img {
