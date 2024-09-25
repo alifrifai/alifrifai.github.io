@@ -32,28 +32,6 @@ toggleButton.addEventListener("click", () => {
   });
 });
 
-document.getElementById("confirm").addEventListener("click", function () {
-  swal(
-    {
-      title: "Penawaran VIP",
-      text: "Dapatkan akses VIP dan nikmati nonton tanpa iklan!",
-      type: "info",
-      showCancelButton: true,
-      confirmButtonColor: "#de9e31",
-      cancelButtonColor: "#ad0e0e",
-      confirmButtonText: "Beli Sekarang",
-      cancelButtonText: "Nanti Saja",
-    },
-    function (isConfirm) {
-      if (isConfirm) {
-        swal("Terima kasih!", "Anda sekarang VIP!", "success");
-      } else {
-        swal(
-          "Penawaran dibatalkan",
-          "Anda dapat mencoba lagi kapan saja.",
-          "error"
-        );
-      }
-    }
-  );
+document.getElementById("confirm").addEventListener("click", function() {
+  alert("Penawaran VIP sedang dalam proses. Terima kasih telah menjadi member!");
 });
