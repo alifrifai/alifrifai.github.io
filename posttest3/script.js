@@ -57,34 +57,3 @@ document.getElementById("confirm").addEventListener("click", function () {
     }
   );
 });
-
-function checkVisibility() {
-    const animeCards = document.querySelectorAll('.anime'); // Select all anime cards
-    const windowHeight = window.innerHeight;
-
-    animeCards.forEach((animeCard) => {
-        const img = animeCard.querySelector('img'); // Get the image inside the anime card
-        const text = animeCard.querySelector('.text'); // Get the text overlay inside the anime card
-
-        const cardTop = animeCard.getBoundingClientRect().top;
-        const cardBottom = animeCard.getBoundingClientRect().bottom;
-
-        // Check if the card is in the viewport
-        if (cardTop < windowHeight && cardBottom > 0) {
-            img.classList.add('visible');
-            img.classList.remove('hidden-up', 'hidden-down');
-            text.classList.add('visible');
-            text.classList.remove('hidden-up', 'hidden-down');
-        } else if (cardTop > windowHeight) {
-            img.classList.remove('visible');
-            img.classList.add('hidden-down');
-            text.classList.remove('visible');
-            text.classList.add('hidden-down');
-        } else if (cardBottom < 0) {
-            img.classList.remove('visible');
-            img.classList.add('hidden-up');
-            text.classList.remove('visible');
-            text.classList.add('hidden-up');
-        }
-    });
-}
