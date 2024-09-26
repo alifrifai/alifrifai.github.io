@@ -35,3 +35,12 @@ toggleButton.addEventListener("click", () => {
 document.getElementById("confirm").addEventListener("click", function() {
   alert("Penawaran VIP sedang dalam proses. Terima kasih telah menjadi member!");
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  hamburgerMenu.addEventListener("click", function() {
+      mobileMenu.classList.toggle("active");
+  });
+});
