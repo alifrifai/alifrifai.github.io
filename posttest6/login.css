@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.242);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.sign-in-form input[type="text"],
+.sign-in-form input[type="password"],
+.sign-in-form input[type="date"] { 
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sign-in-form input[type="submit"] {
+  padding: 12px;
+  background-color: #87cf1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-form input[type="submit"]:hover {
+  background-color: #6b9538;
+}
+
+p[style*="color: red;"] {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .sign-in-form input[type="text"],
+  .sign-in-form input[type="password"],
+  .sign-in-form input[type="date"] { 
+    font-size: 14px;
+  }
+
+  .sign-in-form input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+.home {
+  display: block;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
