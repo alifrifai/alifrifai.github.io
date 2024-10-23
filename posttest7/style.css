@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #505050, #8c8c8c);
+  color: #fff;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(to bottom, #000000, #333333);
+  color: #fff;
+}
+
+.navbar .logo {
+  color: #00ff00;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.navbar .menu a {
+  color: #ccc;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navbar .menu a.active {
+  color: #ccc;
+}
+.navbar .menu a.dropdown {
+  display: flex;
+  align-items: center;
+}
+.navbar .menu a.dropdown i {
+  margin-left: 5px;
+}
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 170px;
+}
+
+.navbar .search-bar input {
+  padding: 5px;
+  border: 2px solid #555;
+  border-radius: 3px;
+  background-color: #333;
+  color: #ccc;
+  margin-right: 5px;
+  width: 550px;
+  height: 33px;
+}
+.navbar .search-bar input::placeholder {
+  color: #aaa;
+}
+.navbar .icons {
+  display: flex;
+  align-items: center;
+}
+.navbar .icons i {
+  color: #ccc;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.navbar .icons .app-button {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("foto/alif.jpg");
+  background-size: cover;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.navbar .icons .vip-button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .logo:hover {
+  color: #00cc00;
+}
+
+.navbar .menu a:hover {
+  color: #fff;
+}
+
+.navbar .menu a.dropdown:hover {
+  color: #fff;
+}
+
+.navbar .search-bar input:hover {
+  border-color: #777;
+}
+
+.navbar .icons i:hover {
+  color: #fff;
+}
+
+.navbar .icons .app-button:hover {
+  background-color: #333;
+  border-color: #777;
+}
+
+.navbar .icons .vip-button:hover {
+  background-color: #e65c00;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.anime-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-anime {
+  display: flex;
+  overflow-x: hidden;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.anime {
+  min-width: 200px;
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #000000
+  );
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+body.dark-mode .anime {
+  background: linear-gradient(to bottom, #000000, #e6e6e6);
+}
+
+.anime:hover {
+  transform: scale(1.05);
+}
+
+.anime img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.anime h3 {
+  padding: 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+body.dark-mode .anime h3 {
+  color: #000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.toggle-btn {
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+
+body.dark-mode {
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #ffffff
+  ); /* Dark mode gradient */
+  color: #ffffff;
+}
+
+.navbar.dark-mode {
+  background-color: #000;
+}
+
+.navbar .menu a.dark-mode {
+  color: #fff;
+}
+
+.navbar .search-bar input.dark-mode {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.anime-container.dark-mode {
+  background-color: #000000;
+}
+
+.anime.dark-mode {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+}
+
+.anime.dark-mode h3 {
+  color: #fff;
+}
+
+body.dark-mode .anime-container h2 {
+  color: #fff;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #2c3e50;
+  padding: 20px 0;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.social-media a img {
+  filter: brightness(1);
+  width: 30px;
+  height: auto;
+  transition: filter 0.3s;
+}
+
+body.dark-mode .social-media a img {
+  filter: brightness(0) invert(1);
+}
+
+.social-media a:hover img {
+  filter: brightness(0.8);
+}
+
+.contact-info a {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+body.dark-mode .contact-info a {
+  color: #ffffff;
+}
+
+.payment-methods img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contain {
+  display: flex;
+  gap: 8px;
+  justify-self: center;
+  align-items: center;
+}
+
+button {
+  padding: 8px 20px;
+  border: none;
+  font-weight: 800;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#confirm {
+  background-color: rgb(255, 149, 0);
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    display: block;
+    margin-right: 10px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        display: none;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+.mobile-menu.active {
+    display: flex;
+}
